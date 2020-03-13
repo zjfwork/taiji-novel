@@ -1,0 +1,38 @@
+<view class="my-wrapper">
+    <!-- 头部 -->
+    <view class="info">
+        <view class="img">
+            <!-- <image src="../../image/icon-xingxing.png"></image> -->
+            <image src="{{userInfo.avatarUrl}}"></image>
+        </view>
+        <view class="nickname">
+            <!-- <text>王工</text> -->
+            <text>{{userInfo.nickName}}</text>
+        </view>
+    </view>
+
+    <!-- 信息 -->
+    <view class="lists">
+        <view class="li">
+            <text>我的书架</text>
+            <image src="../../images/icon-arrow-right.png"></image>
+        </view>
+        <view class="li">
+            <text>我的书币</text>
+            <image src="../../images/icon-arrow-right.png"></image>
+        </view>
+        <view class="li">
+            <text>清理缓存</text>
+            <image src="../../images/icon-arrow-right.png"></image>
+        </view>
+        <view class="li">
+            <text>联系客服</text>
+            <image src="../../images/icon-arrow-right.png"></image>
+        </view>
+        <view class="li">
+            <text>关于我们</text>
+            <image src="../../images/icon-arrow-right.png"></image>
+        </view>
+    </view>
+
+</view>

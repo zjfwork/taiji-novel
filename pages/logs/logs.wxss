@@ -1,0 +1,122 @@
+page{
+    background: #E9DABE;
+    /* 想要水平垂直居中， 要给高度才行 */
+    height: 100%;
+    position: relative;
+}
+.logs-wrapper{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* 点击弹出 */
+.logs-wrapper .table{
+    width: 150px;
+    height: 300px;
+    background: red;
+    opacity: 0;
+
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+/* 弹出内容 */
+/* 顶部 */
+.logs-wrapper .logs-top{
+    width: 100%;
+    height: 30px;
+    background: #F3F2F1;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.logs-top image{
+    width: 20px;
+    height: 20px;
+    margin: 5px 0 0 10px;
+}
+
+/* 底部 */
+.logs-wrapper .logs-bottom{
+    width: 100%;
+    height: 90px;
+    background: #F3F2F1;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+}   
+
+.logs-bottom .b-top{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    border-bottom: solid 1px #ccc;
+}
+.b-top text{
+    flex: auto;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+}
+.b-top text:nth-child(1){
+    border-right: solid 1px #ccc; 
+}
+/* 目录， 设置， 书架，我的 */
+.logs-bottom .b-bottom{
+    width: 100%;
+    display: flex;
+}
+.b-bottom .btn{
+    flex: auto;
+    float: left;
+    text-align: center;
+    margin-top: 5px;
+    position: relative;
+}
+.btn image{
+    width: 25px;
+    height: 25px;
+}
+.btn text{ 
+    display: block;
+    font-size: 12px;
+    color: gray;
+    position: relative;
+    bottom: 5px;
+    /* position: absolute;
+    bottom: -10px;
+    left: 27px; */
+}
+
+/* 文本内容 */
+.content{
+    /* padding: 10px 4px 10px 10px; */
+    padding: 10px 5px;
+    /* letter-spacing: 2px; */
+}
+/* 左侧 */
+.last{
+    width: 70px;
+    height: 100%;
+    background: cyan;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+}
+/* 右侧 */
+.next{
+    width: 70px;
+    height: 100%;
+    background: cyan;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+}

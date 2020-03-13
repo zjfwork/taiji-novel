@@ -1,0 +1,27 @@
+<!-- <view class="book-a">
+    <view class="a-top">
+            <image src="../../images/399s.jpg"></image>
+            <text>少年，书架上木有书~</text>
+    </view>
+    <view class="a-bottom">去书城逛逛</view>
+
+</view> -->
+
+<view class="book-b">
+    <view class="book-top clearfix">
+        <view class="t-left">共{{bookshelf.length}}本</view>
+        <view class="t-right" bindtap="clearbook">清空书架</view>
+    </view>
+    <view class="book-bottom clearfix">
+        <view class="ul" wx:for="{{bookshelf}}" wx:key="*this">
+            <view class="li">
+                <!-- <image src="{{item.img}}"></image>
+                <text>{{item.bookname}}</text> -->
+                <navigator url="/pages/detail/detail?id={{item.id}}">
+                    <image src="{{item.img}}"></image>
+                    <text>{{item.bookname}}</text>
+                </navigator>
+            </view>
+        </view>
+    </view>
+</view>

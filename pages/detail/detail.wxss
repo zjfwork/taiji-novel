@@ -1,0 +1,214 @@
+.detail-wrapper{
+    position: relative;
+}
+/* 头部 */
+.detail-wrapper .det-header{
+    padding: 10px 5px 5px 5px;
+    background: white;
+}
+.det-header .h-top{
+    height: 110px;
+    position: relative;
+}
+.h-top .t-left{
+}
+.t-left image{
+    width: 90px;
+    height: 110px;
+}
+.h-top .t-right{
+    position: absolute;
+    left: 100px;
+    top: 0;
+}
+.t-right text{
+    display: block;
+    font-size: 14px;
+    color: gray;
+
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.t-right .r-bookname{
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: black;
+}
+.det-header .h-bottom{
+    width: 100%;
+    text-align: center;
+    /* margin: 0 auto; */
+}
+.h-bottom text{
+    /* padding: 10px 20px; */
+    display: inline-block;
+    width: 28%;
+    height: 36px;
+    line-height: 36px;
+    border: 0;
+    border-radius: 5px;
+    margin: 10px 5px;
+    text-align: center;
+    color: white;
+}
+.h-bottom .b-a{
+    background: #F77720;
+}
+.h-bottom .b-b{
+    background: #65BBEC;
+}
+.h-bottom .b-c{
+    background: #ED424B;
+}
+
+/* 广告 */
+.detail-wrapper .det-advert{
+}
+.det-advert image{
+    width: 100%;
+    height: 50px;
+}
+/*  简介 */
+.detail-wrapper .det-introduction{
+    background: white;
+    text-indent: 10px;
+}
+.det-introduction .intro-top{
+    width: 100%;
+    /* background: #f0f0f0; */
+    padding: 10px 0;
+}
+.det-introduction .intro-bottom{
+    padding: 0 10px;
+}
+
+/*  章节 */
+.detail-wrapper .det-catalogue{
+    background: white;
+    text-indent: 10px;
+    margin-top: 10px;
+}
+.det-catalogue .catalo-top{
+    width: 100%;
+    /* background: #f0f0f0; */
+    padding: 10px 0;
+}
+.det-catalogue .catalo-bottom{
+    /* padding: 0 10px; */
+}
+.catalo-bottom text{
+    display: block;
+    border-bottom: solid 1px #ccc;
+    padding: 10px 0; 
+}
+.catalo-bottom text:nth-child(2){
+    color: gray;
+    font-size: 14px;
+    padding: 10px 0; 
+    text-align: center;
+}
+
+/* 评论 */
+.detail-wrapper .det-comment{
+    background: white;
+}
+.det-comment .com-top{
+    width: 100%;
+    /* background: #f0f0f0; */
+    padding: 10px 0;
+    text-indent: 10px;  
+    border-bottom: solid 1px #ccc;
+    margin-top: 10px;
+}
+.det-comment .com-bottom{
+    width: 100%;
+    position: relative;
+}
+.com-bottom .com-a{
+    padding: 10px;
+    /* padding-bottom: 50px; */
+    position: relative;
+    border-bottom: solid 1px #ccc;
+}
+.com-a .com-left{
+    width: 40px;
+    height: 50px;
+}
+.com-left image{
+    width: 40px;
+    height: 50px;
+}
+.com-a .com-right{
+    position: absolute;
+    top: 5px;
+    left: 60px;
+}
+.com-right text{
+    display: block;
+}
+.com-right text .com-time{
+    float: right;
+    font-size: 12px;
+    color: gray;
+}
+.com-right text:nth-child(2){
+    /* color: red; */
+    width: 250px;
+    margin-top: 5px;
+    font-size: 12px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+ /* 更多评论  */
+.com-bottom .com-more{
+    color: gray;
+    font-size: 14px;
+    padding: 10px 0;
+    text-align: center;
+}
+/* 喜欢这本书的人还在看 */
+/* 免费精品 */
+.cate-b{
+    width: 100%;
+    margin-top: 10px;
+}
+.cate-b .b-top{
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    /* padding-left: 10px;出现横向滚动条 */
+    text-indent: 10px;
+    background: white;    
+    position: relative;
+}
+.b-top .b-change{
+    position: absolute;
+    right: 10px;
+    color: gray;
+    font-size: 12px;
+}
+.cate-b .b-ul{
+    width: 33%;
+    float: left;
+    text-align: center;
+    background: white;
+    padding: 5px 0;
+}
+.b-ul .b-li{
+
+}
+.b-li image{
+    width: 90px;
+    height: 110px;
+
+}
+.b-li text{
+    display: block;
+    font-size: 12px;
+}   

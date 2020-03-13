@@ -1,0 +1,105 @@
+<view class="detail-wrapper">
+    <!-- 头部 -->
+    <view class="det-header">
+        <view class="h-top">
+             <view class="t-left">
+                <image src="{{detailArr.img}}"></image>
+            </view>
+            <view class="t-right">
+                <text class="r-bookname">{{detailArr.bookname}}</text>
+                <text>作者：{{detailArr.author}}</text>
+                <text>分类：{{detailArr.category}}</text>
+                <text>字数：{{detailArr.number}}</text>
+                <text>最新：{{detailArr.latest}}</text>
+            </view>
+        </view>
+        <view class="h-bottom">
+            <text class="b-a" bindtap="goread">开始阅读</text>
+            <text class="b-b" bindtap="addbookshelf">加入书架</text>
+            <text class="b-c" bindtap="gobookshelf">我的书架</text>
+        </view>
+    </view>
+    
+    <!-- 广告 -->
+    <view class="det-advert">
+        <image src="../../images/ln4yp8g97c.gif"></image>
+    </view>
+
+    <!--   简介  -->
+    <view class="det-introduction">
+        <view class="intro-top">
+            作品简介
+        </view>
+        <view class="intro-bottom">
+            <text>{{detailArr.introduction}}
+            
+            </text>
+        </view>
+    </view>
+    <!--   章节 -->
+    <view class="det-catalogue">
+        <view class="catalo-top">
+            最新章节
+        </view>
+        <view class="catalo-bottom">
+            <text>{{detailArr.latest}}</text>
+            <text class="b-zj">查看全部章节</text>
+        </view>
+    </view>
+
+    <!-- 评论 -->
+    <view class="det-comment">
+        <view class="com-top">
+            评论
+        </view>
+        <view class="com-bottom">
+            <view class="com-a">
+                <view class="com-left">
+                    <image src="{{detailArr.img}}"></image>
+                </view>
+                <view class="com-right">
+                    <text>烽火戏诸侯 <text class="com-time">2019-1-1</text></text>
+                    <text>这本书太棒了!搞劳一下，希望后续更加精彩!</text>
+                </view>
+            </view>
+            <view class="com-a">
+                <view class="com-left">
+                    <image src="{{detailArr.img}}"></image>
+                </view>
+                <view class="com-right">
+                    <text>番茄车厘子 <text class="com-time">2019-1-1</text></text>
+                    <text>希望可以再接再厉!</text>
+                </view>
+            </view>
+            <view class="com-a">
+                <view class="com-left">
+                    <image src="{{detailArr.img}}"></image>
+                </view>
+                <view class="com-right">
+                    <text>你过来啊 <text class="com-time">2019-1-1</text></text>
+                    <text>希望可以再接再厉!</text>
+                </view>
+            </view>
+            <!-- 更多评论 -->
+            <view class="com-more">
+                查看更多
+            </view>
+        </view>
+    </view>
+
+    <!-- 喜欢这本书的人还在看  免费精品 -->
+    <view class="cate-b clearfix">
+        <text class="b-top"> 喜欢这本书的人还在看 <text class="b-change">换一换</text></text>
+        <view class="b-ul" wx:for="{{arr1}}" wx:key="*this">
+            <view class="b-li">
+                <image src="{{detailArr.img}}"></image>
+                <text>{{detailArr.bookname}}</text>
+            </view>
+        </view>
+    </view>
+
+    <!-- 返回顶部 -->
+    <view bindtap="goTop">
+        返回顶部
+    </view>
+</view>

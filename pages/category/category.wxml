@@ -1,0 +1,50 @@
+<view class="category-wrapper">
+    <view class="categ-header clearfix"  wx:for="{{cateArr}}" wx:key="*this">
+        <view class="header-top">{{item.title}}</view>
+        <view class="header-bottom">
+            <view class="b-ul">
+                <view class="b-li">
+                    <text class="b-a">{{item.cate1}}</text>
+                </view>
+                <view class="b-li">
+                    <text class="b-a">{{item.cate2}}</text>
+                </view>
+                <view class="b-li">
+                    <text class="b-a">{{item.cate3}}</text>
+                </view>
+                <view class="b-li">
+                    <text class="b-a">{{item.cate4}}</text>
+                </view>
+            </view>
+            <view class="b-ul">
+                <view class="b-li">
+                    <text class="b-a">{{item.cate5}}</text>
+                </view>
+                <view class="b-li">
+                    <text class="b-a">{{item.cate6}}</text>
+                </view>
+                <view class="b-li">
+                    <text class="b-a">{{item.cate7}}</text>
+                </view>
+                <view class="b-li">
+                    <text class="b-a">{{item.cate8}}</text>
+                </view>
+            </view>
+            <view class="b-ul">
+                <view class="b-li">
+                    <text class="b-a">{{item.cate9}}</text>
+                </view>
+                <view class="b-li">
+                    <text class="b-a">{{item.cate10}}</text>
+                </view>
+                <view class="b-li">
+                    <text class="b-a">{{item.cate11}}</text>
+                </view>
+                <view class="b-li">
+                    <text class="b-a">{{item.cate12}}</text>
+                </view>
+            </view>
+        </view>    
+    </view>
+
+</view>

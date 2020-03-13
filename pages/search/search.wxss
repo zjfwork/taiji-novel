@@ -1,0 +1,74 @@
+.search{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+}
+.search .inp{
+    position: absolute;
+    width: 96%;
+    height: 40px;
+    background: white;
+    border: solid #ccc 1px;
+    border-radius: 5px;
+    /* text-indent: 10px; */
+    padding-left: 10px;
+}
+.search .ss{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 40px;
+    height: 40px;
+}
+
+.ul{
+    width: 100%;
+    height: 120px;
+    /* text-align: center; */
+    /* line-height: 120px; */
+    margin-bottom: 10px;
+    /* background: cyan; */
+}
+.ul .li{
+    height: 120px;
+    position: relative;
+    margin-top: 10px;
+}
+.ul .li image{
+    width: 90px;
+    height: 110px;
+    margin: 5px;
+}
+.ul .li .cate-right{
+    height: 120px;
+    position: absolute;
+    top: 0px;
+    left: 100px;
+}
+
+.cate-right .cate-aa{
+    border-bottom:solid 1px #ccc; 
+    margin: 0 10px;
+}
+.cate-aa .bookname{
+    font-weight: bold;
+}
+.cate-aa .author{
+    float: right;
+    color: #ccc;
+}
+
+.cate-right .cate-bb{
+    overflow: hidden;
+    text-indent: 30px;
+    margin-top: 5px;
+}
+.cate-bb .bookinfo{
+    display: block;
+    height: 80px;
+    font-size: 14px;
+    text-indent: 20px;
+}

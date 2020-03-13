@@ -1,0 +1,46 @@
+<view class="logs-wrapper">
+    <!-- 点击中间弹出 -->
+    <view class="table" bindtap="table"></view>
+
+    <!-- 弹出内容 -->
+    <!-- <view hidden="{{show}}" class="logs-top">
+        <image src="../../images/icon-arrow-left.png"></image>
+    </view> -->
+    <view hidden="{{show}}" class="logs-bottom">
+        <view class="b-top">
+            <text bindtap="last">上一章</text>
+            <text bindtap="next">下一章</text>
+        </view>
+        <view class="b-bottom">
+            <view class="btn">
+                <image src="../../images/mulu.png"></image>
+                <text>目录</text>
+            </view>
+            <view class="btn">
+                <image src="../../images/shezhi.png"></image>
+                <text>设置</text>
+            </view>
+            <view class="btn">
+                <image src="../../images/shujia.png"></image>
+                <text bindtap="gobookshelf" bindtap="gobookshelf">书架</text>
+            </view>
+            <view class="btn">
+                <image src="../../images/wode.png"></image>
+                <text bindtap="gomy">我的</text>
+            </view>
+        </view>
+    </view>
+
+    <view class="last" bindtap="last">
+    
+    </view>
+    <view class="next" bindtap="next">
+    
+    </view>
+
+    <!-- 小说内容 -->
+    <view class="content">
+        <!-- {{logs[num].content}} -->
+        {{lists[readId-1].logs[num].content}}
+    </view>
+</view>

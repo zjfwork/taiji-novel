@@ -1,0 +1,28 @@
+<view>
+    <view class="search">
+        <input class="inp" auto-focus placeholder="快速搜索、找书、找作者" value="{{wxSearchData}}" bindinput="wxSearchInput" bindconfirm="wxSearchConfirm"/>
+        <icon class="ss" type="search" size="40"></icon>
+        <!-- <button class="btn">搜索</button> -->
+    </view>
+
+    <!-- <view class="lists" wx:for="{{lists}}" wx:key="*this">
+        <image src="{{item.img}}"></image>
+        {{item.bookname}}
+    </view> -->
+    <view class="ul" wx:for="{{lists}}" wx:key="*this">
+            <view class="li">
+                <image src="{{item.img}}"></image>
+                <navigator url="/pages/detail/detail">
+                    <view class="cate-right">
+                        <view class="cate-aa">
+                            <text class="bookname">{{item.bookname}}</text>
+                            <text class="author">{{item.author}}</text>
+                        </view>
+                        <view class="cate-bb">
+                            <text class="bookinfo">{{item.bookinfo}}</text>
+                        </view>
+                    </view>
+                </navigator>
+            </view>
+        </view>
+</view>

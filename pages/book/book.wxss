@@ -1,0 +1,101 @@
+page{
+    background: white;    
+}
+.book-a{    
+    width: 100%;
+    position: relative;
+    font-size: 14px;
+}
+.book-a .a-top{
+    width: 100px;
+    height: 100px;
+    border: solid;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 100px;
+} 
+.book-a .a-top image{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+} 
+.book-a .a-top text{
+    width: 120px;
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    color: gray;
+} 
+.book-a .a-bottom{
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    color: red;
+    border: solid 1px red;
+    border-radius: 3px;
+    text-align: center;
+    margin: 40px auto;
+} 
+/* .book-a .ul{ 
+
+}
+.book-a .ul .li{ 
+
+}
+.book-a .ul .li image{ 
+
+}
+.book-a .ul .li text{ 
+
+} */
+
+
+
+.book-b{
+    width: 100%;
+    position: relative;
+}
+.book-b .book-top{
+    width: 100%;
+    height: 40px;
+    padding: 5px 0;
+    background: #f0f0f0;
+}
+.book-top .t-left{
+    float: left;
+    /* text-indent: 10px; */
+    margin: 10px 0 0 10px;
+}
+.book-top .t-right{
+    /* width: 80px; */
+    /* height: 30px; */
+    padding: 0 10px;
+    line-height: 30px;
+    margin-top: 5px;
+    font-size: 14px;
+    border: solid 1px #ccc;
+    text-align: center;
+    float: right;
+    position: relative;
+    right: 10px;
+}
+.book-b .book-bottom{
+    width: 100%;
+    padding-top: 10px;
+}
+.book-bottom .ul{
+    width: 100%;
+}
+.book-bottom .ul .li{
+    width: 33.33%;
+    text-align: center;
+    float: left;
+    margin: 5px 0;
+}
+.book-bottom .ul .li image{
+    width: 90px;
+    height: 110px;
+}
+.book-bottom .ul .li text{
+    display: block;
+}

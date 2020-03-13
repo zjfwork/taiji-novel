@@ -1,0 +1,88 @@
+<view class="index-wrapper">
+    <!-- 搜索框 -->
+    <!-- <view class="index-header"> -->
+        <view class="search">
+            <input class="inp" placeholder="快速搜索、找书、找作者" bindtap="gosearch"/>
+            <icon class="ss" type="search" size="40"></icon>
+            <!-- <button class="btn">搜索</button> -->
+        </view>
+    <!-- </view> -->
+    
+    <!-- 轮播图 -->
+    <swiper class="lbt" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}">
+        <swiper-item wx:for="{{background}}" wx:key="*this">
+            <image src="{{item}}"></image>
+        </swiper-item>
+    </swiper>
+
+    <!-- 分类 -->
+    <view class="cate-a">
+        <text class="cate-top">热门小说</text>
+        <!-- <view class="ul" wx:for="{{lists}}" wx:key="*this">
+            <view class="li">
+                <image src="{{item.img}}"></image>
+                <view class="cate-right">
+                    <view class="cate-aa">
+                        <text class="bookname">{{item.bookname}}</text>
+                        <text class="author">{{item.author}}</text>
+                    </view>
+                    <view class="cate-bb">
+                        <text class="bookinfo">{{item.bookinfo}}</text>
+                    </view>
+                </view>
+            </view>
+        </view> -->
+        <view class="ul" wx:for="{{lists}}" wx:key="*this">
+            <view class="li">
+                <image src="{{item.img}}"></image>
+                <navigator url="/pages/detail/detail?id={{item.id}}">
+                    <view class="cate-right">
+                        <view class="cate-aa">
+                            <text class="bookname">{{item.bookname}}</text>
+                            <text class="author">{{item.author}}</text>
+                        </view>
+                        <view class="cate-bb">
+                            <text class="bookinfo">{{item.bookinfo}}</text>
+                        </view>
+                    </view>
+                </navigator>
+            </view>
+        </view>
+    </view>
+
+    <!-- 免费精品 -->
+    <view class="cate-b clearfix">
+        <text class="b-top">免费精品</text>
+        <view class="b-ul" wx:for="{{arr1}}" wx:key="*this">
+            <view class="b-li">
+                <image src="{{item.img}}"></image>
+                <text>{{item.bookname}}</text>
+            </view>
+        </view>
+    </view>
+    <!-- 男生频道 -->
+    <view class="cate-b clearfix">
+        <text class="b-top">男生频道</text>
+        <view class="b-ul" wx:for="{{arr1}}" wx:key="*this">
+            <view class="b-li">
+                <image src="{{item.img}}"></image>
+                <text>{{item.bookname}}</text>
+            </view>
+        </view>
+    </view>
+    <!-- 女生频道 -->
+    <view class="cate-b">
+        <text class="b-top">女生频道</text>
+        <view class="b-ul" wx:for="{{arr1}}" wx:key="*this">
+            <view class="b-li">
+                <image src="{{item.img}}"></image>
+                <text>{{item.bookname}}</text>
+            </view>
+        </view>
+    </view>
+    
+    <!-- 返回顶部 -->
+    <view bindtap="goTop">
+        返回顶部
+    </view>
+</view>
